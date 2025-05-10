@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta lang="zh">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="Weather.css" rel="stylesheet">
+        <script src="WeatherJS.js" defer></script>
+    </head>
+    <body>
+        <dialog class="information-dialog" id="information-dialog" >
+            <h1>正在获取和更新数据,请稍后</h1>
+        </dialog>
+        <dialog class="search-dialog" id="search-dialog" tabindex="0">
+            <form  method="dialog" class="search-form" id="search-form">
+            </form>
+        </dialog>
+        <h1 class="title">天气预报</h1>
+        <input type="search" class="search"  id="searchbox" placeholder="请输入内容">
+        <div class="location">
+            <img  class="location-img" src="image/Location.png">
+            <p class="location-p" id="location-p"></p>
+        </div>
+        <div class="base-box" id="base-box">
+            <p  class="comonfontsetting" id="reporttime" style="margin: 0 -10%;"></p>
+            <div class="Weather-box-main" id="Weather-box-main"></div>
+        </div>
+        <div class="all-box" id="all-box">
+            <p class="comonfontsetting title2">多日预报</p>
+            <div class="Weather-box" id="today">
+            </div>
+            <div class="Weather-box" id="tomorrow"></div>
+            <div class="Weather-box" id="dayaftertomorrow"></div>
+            <div class="Weather-box" id="threedaysformnow"></div>
+        </div>
+    </body>
+</html>
